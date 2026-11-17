@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Team Byte: a CSC 216 web development pair.">
+  <title>Home | Team Byte</title>
+  <link rel="stylesheet" href="css/styles.css">
+  <script src="js/script.js" defer></script>
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to main content</a>
+
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="logo" href="index.html">Team Byte</a>
+      <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="site-nav">Menu</button>
+      <nav id="site-nav" class="site-nav" aria-label="Main">
+        <ul>
+          <li><a href="index.html" aria-current="page">Home</a></li>
+          <li><a href="projects.html">Projects</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
+      <button class="theme-toggle" type="button" aria-pressed="false">Dark mode</button>
+    </div>
+  </header>
+
+  <main id="main">
+    <section class="hero">
+      <div class="container">
+        <p class="eyebrow">CSC 216 · Lab 2</p>
+        <h1>We build small things for the web.</h1>
+        <p class="lead">We are two Computer Science students learning HTML, CSS and JavaScript, one page at a time.</p>
+        <a class="button" href="projects.html">See our projects</a>
+      </div>
+    </section>
+
+    <section class="container section" aria-labelledby="team-heading">
+      <h2 id="team-heading">Meet the team</h2>
+      <div class="team-grid">
+        <article class="card">
+          <div class="avatar" aria-hidden="true">AW</div>
+          <h3>Amina Wanjiru</h3>
+          <p class="role">Structure and design</p>
+          <p>Enjoys turning rough sketches into clean, accessible layouts.</p>
+        </article>
+        <article class="card">
+          <div class="avatar" aria-hidden="true">BO</div>
+          <h3>Brian Otieno</h3>
+          <p class="role">Logic and interaction</p>
+          <p>Came from C and likes making pages respond to people.</p>
+        </article>
+      </div>
+    </section>
+
+    <section class="container section" aria-labelledby="learning-heading">
+      <h2 id="learning-heading">What we are learning</h2>
+      <ul class="skill-list">
+        <li><strong>HTML</strong> gives a page its structure and meaning.</li>
+        <li><strong>CSS</strong> controls how that structure looks.</li>
+        <li><strong>JavaScript</strong> makes the page respond to the user.</li>
+      </ul>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <p>© <span id="year">2026</span> Team Byte. Built for CSC 216.</p>
+    </div>
+  </footer>
+</body>
+</html>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Projects built by Team Byte while learning web development.">
+  <title>Projects | Team Byte</title>
+  <link rel="stylesheet" href="css/styles.css">
+  <script src="js/script.js" defer></script>
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to main content</a>
+
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="logo" href="index.html">Team Byte</a>
+      <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="site-nav">Menu</button>
+      <nav id="site-nav" class="site-nav" aria-label="Main">
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="projects.html" aria-current="page">Projects</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
+      <button class="theme-toggle" type="button" aria-pressed="false">Dark mode</button>
+    </div>
+  </header>
+
+  <main id="main" class="container">
+    <header class="page-header">
+      <h1>Our projects</h1>
+      <p class="lead">Small exercises we built while learning. Filter them by technology.</p>
+    </header>
+
+    <div class="filters" role="group" aria-label="Filter projects by technology">
+      <button class="filter-btn" type="button" data-filter="all" aria-pressed="true">All</button>
+      <button class="filter-btn" type="button" data-filter="html" aria-pressed="false">HTML</button>
+      <button class="filter-btn" type="button" data-filter="css" aria-pressed="false">CSS</button>
+      <button class="filter-btn" type="button" data-filter="js" aria-pressed="false">JavaScript</button>
+    </div>
+
+    <p id="project-count" class="project-count" aria-live="polite"></p>
+    <div id="project-list" class="project-grid"></div>
+
+    <noscript>
+      <p>Turn on JavaScript to see the project list.</p>
+    </noscript>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <p>© <span id="year">2026</span> Team Byte. Built for CSC 216.</p>
+    </div>
+  </footer>
+</body>
+</html>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Send a message to Team Byte.">
+  <title>Contact | Team Byte</title>
+  <link rel="stylesheet" href="css/styles.css">
+  <script src="js/script.js" defer></script>
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to main content</a>
+
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="logo" href="index.html">Team Byte</a>
+      <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="site-nav">Menu</button>
+      <nav id="site-nav" class="site-nav" aria-label="Main">
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="projects.html">Projects</a></li>
+          <li><a href="contact.html" aria-current="page">Contact</a></li>
+        </ul>
+      </nav>
+      <button class="theme-toggle" type="button" aria-pressed="false">Dark mode</button>
+    </div>
+  </header>
+
+  <main id="main" class="container">
+    <header class="page-header">
+      <h1>Contact us</h1>
+      <p class="lead">Questions, feedback or an idea for a project? Send us a message.</p>
+    </header>
+
+    <form id="contact-form" class="contact-form" novalidate>
+      <div class="field">
+        <label for="name">Full name</label>
+        <input type="text" id="name" name="name" autocomplete="name" required aria-describedby="name-error">
+        <p class="error" id="name-error"></p>
+      </div>
+
+      <div class="field">
+        <label for="email">Email address</label>
+        <input type="email" id="email" name="email" autocomplete="email" required aria-describedby="email-error">
+        <p class="error" id="email-error"></p>
+      </div>
+
+      <div class="field">
+        <label for="topic">Topic</label>
+        <select id="topic" name="topic">
+          <option value="general">General question</option>
+          <option value="collaboration">Collaboration</option>
+          <option value="feedback">Feedback on our site</option>
+        </select>
+      </div>
+
+      <div class="field">
+        <label for="message">Message</label>
+        <textarea id="message" name="message" rows="6" required minlength="20" aria-describedby="message-hint message-error"></textarea>
+        <p class="hint" id="message-hint">At least 20 characters. You have typed <span id="char-count">0</span>.</p>
+        <p class="error" id="message-error"></p>
+      </div>
+
+      <button class="button" type="submit">Send message</button>
+      <p id="form-status" class="form-status" role="status"></p>
+    </form>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <p>© <span id="year">2026</span> Team Byte. Built for CSC 216.</p>
+    </div>
+  </footer>
+</body>
+</html>
