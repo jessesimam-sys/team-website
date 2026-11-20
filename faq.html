@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Answers to common questions about Kim and Ben and this website.">
+  <title>FAQ | Kim and Ben</title>
+  <link rel="stylesheet" href="css/styles.css">
+  <script src="js/script.js" defer></script>
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to main content</a>
+
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="logo" href="index.html">Kim and Ben</a>
+      <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="site-nav">Menu</button>
+      <nav id="site-nav" class="site-nav" aria-label="Main">
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="projects.html">Projects</a></li>
+          <li><a href="contact.html">Contact</a></li>
+          <li><a href="faq.html" aria-current="page">FAQ</a></li>
+        </ul>
+      </nav>
+      <button class="theme-toggle" type="button" aria-pressed="false">Dark mode</button>
+    </div>
+  </header>
+
+  <main id="main" class="container">
+    <header class="page-header">
+      <h1>Frequently asked questions</h1>
+      <p class="lead">Quick answers about our team and how this site was built.</p>
+    </header>
+
+    <div class="faq">
+      <details>
+        <summary>Who are Kim and Ben?</summary>
+        <p>Kim and Ben is our team name. We are Jesse Kimutai and Benedict Mochabo, two students at Moi University learning web development in CSC 216.</p>
+      </details>
+
+      <details>
+        <summary>What is this website for?</summary>
+        <p>It is our CSC 216 Lab 2 project: a small site written by hand in plain HTML, CSS and JavaScript, with no frameworks or templates, and published on GitHub Pages.</p>
+      </details>
+
+      <details>
+        <summary>How did we work together?</summary>
+        <p>We used pair programming. One of us typed while the other reviewed, and we swapped roles in every part of the lab. Both of us are credited on every commit in our shared GitHub repository.</p>
+      </details>
+
+      <details>
+        <summary>Does the contact form send my message?</summary>
+        <p>Not yet. The form checks your input in the browser and shows a confirmation, but there is no server behind it, so nothing is sent. If you leave half-way, your unsent draft is kept only in your own browser.</p>
+      </details>
+
+      <details>
+        <summary>How does dark mode work?</summary>
+        <p>The Dark mode button switches the colour theme and remembers your choice on every page. Until you choose, the site follows your device's light or dark setting.</p>
+      </details>
+    </div>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <p>© <span id="year">2026</span> Kim and Ben. Built for CSC 216.</p>
+    </div>
+  </footer>
+</body>
+</html>

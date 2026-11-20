@@ -259,9 +259,11 @@ img {
   margin-bottom: var(--space-2);
   border-radius: 50%;
   background-color: var(--color-primary);
+  object-fit: cover;
   color: var(--color-on-primary);
   font-size: 1.25rem;
   font-weight: 700;
+  object-fit: cover;
 }
 
 .role {
